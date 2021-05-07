@@ -1,0 +1,167 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sct</groupId>
+	<artifactId>TuitionReimbursementManagementSystem</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>bom</artifactId>
+				<version>2.15.43</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk</artifactId>
+				<version>1.11.1004</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId> <!-- Bill of Materials -->
+				<version>4.3.24.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<manifestEntries>
+										<Main-Class>com.revature.Driver</Main-Class>
+									</manifestEntries>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.javalin</groupId>
+			<artifactId>javalin</artifactId>
+			<version>3.13.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>3.7.7</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-inline</artifactId>
+			<version>3.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>2.22.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Datastax Cassandra Driver -->
+		<dependency>
+			<groupId>com.datastax.oss</groupId>
+			<artifactId>java-driver-core</artifactId>
+			<version>4.11.0</version>
+		</dependency>
+		<!-- Unit testing software for Cassandra -->
+		<!-- 
+		<dependency>
+			<groupId>org.cassandraunit</groupId>
+			<artifactId>cassandra-unit</artifactId>
+			<version>4.3.1.0</version>
+		</dependency> -->
+		<!-- AWS plugin for Cassandra authentication -->
+		<dependency>
+			<groupId>software.aws.mcs</groupId>
+			<artifactId>aws-sigv4-auth-cassandra-java-driver-plugin</artifactId>
+			<version>4.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>s3</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.14</version>
+		</dependency>
+		<dependency>
+			<groupId>io.reactivex.rxjava2</groupId>
+			<artifactId>rxjava</artifactId>
+			<version>2.2.21</version>
+		</dependency>
+
+		<!-- Spring Core Dependency. The IOC Container. Necessary for Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<!-- Spring Beans. This module adds events to the Spring Bean Lifecycle -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<!-- Spring Context. This is the ApplicationContext (The successor of BeanFactory) -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<!-- Spring Context Support. A helper module for Spring Context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<!-- Allows you to take advantage of Springs Aspect Oriented Programming 
+			libraries -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+	</dependencies>
+</project>

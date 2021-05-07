@@ -1,0 +1,1525 @@
+{
+	"info": {
+		"_postman_id": "3e86c33d-4e91-42ad-8f0a-91f221361efd",
+		"name": "TRMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register some employees",
+			"item": [
+				{
+					"name": "Register 5 Tyler 0 0 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 5,\r\n    \"employeeEmail\": \"tyler.lopez@revature.net\",\r\n    \"employeeFirstName\": \"Tyler\",\r\n    \"employeeLastName\": \"Lopez\",\r\n    \"department\": \"Benefits Coordination\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"true\",\r\n    \"directSuperId\": 2,\r\n    \"deptHeadId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 9 Matt 1 1 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 9,\r\n    \"employeeEmail\": \"matilda.kerwin@revature.net\",\r\n    \"employeeFirstName\": \"Matt\",\r\n    \"employeeLastName\": \"Kerwin\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"true\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 0,\r\n    \"deptHeadId\": 0\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 6 Kevin 1 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 6,\r\n    \"employeeEmail\": \"kevin.rose@revature.net\",\r\n    \"employeeFirstName\": \"Kevin\",\r\n    \"employeeLastName\": \"Rose\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 9,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 12 Albert 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 12,\r\n    \"employeeEmail\": \"albert.magpoc@revature.net\",\r\n    \"employeeFirstName\": \"Albert\",\r\n    \"employeeLastName\": \"Magpoc\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 6,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 3 Ceymour 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 3,\r\n    \"employeeEmail\": \"ceymour.butts@revature.net\",\r\n    \"employeeFirstName\": \"Ceymour\",\r\n    \"employeeLastName\": \"Butts\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 6,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 7 Thomas 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 7,\r\n    \"employeeEmail\": \"thomas.an@revature.net\",\r\n    \"employeeFirstName\": \"Thomas\",\r\n    \"employeeLastName\": \"An\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 6,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 23 Melvin 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 23,\r\n    \"employeeEmail\": \"melvin.covington@revature.net\",\r\n    \"employeeFirstName\": \"Melvin\",\r\n    \"employeeLastName\": \"Covington\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 6,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 8 Richard 1 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 8,\r\n    \"employeeEmail\": \"richard.orr@revature.net\",\r\n    \"employeeFirstName\": \"Richard\",\r\n    \"employeeLastName\": \"Orr\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 9,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 10 Nando 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 10,\r\n    \"employeeEmail\": \"fernando.martell@revature.net\",\r\n    \"employeeFirstName\": \"Nando\",\r\n    \"employeeLastName\": \"Martell\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 8,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 11 Ari 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 11,\r\n    \"employeeEmail\": \"arieh.gennello@revature.net\",\r\n    \"employeeFirstName\": \"Ari\",\r\n    \"employeeLastName\": \"Gennello\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 8,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 13 Ben 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 13,\r\n    \"employeeEmail\": \"benjamin.wood@revature.net\",\r\n    \"employeeFirstName\": \"Ben\",\r\n    \"employeeLastName\": \"Wood\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 8,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 24 Ned 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 24,\r\n    \"employeeEmail\": \"nerijus.gelezinis@revature.net\",\r\n    \"employeeFirstName\": \"Ned\",\r\n    \"employeeLastName\": \"Gelezinis\",\r\n    \"department\": \"Software Engineering\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 8,\r\n    \"deptHeadId\": 9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 14 Dakota 1 1 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 14,\r\n    \"employeeEmail\": \"dakota.clark@revature.net\",\r\n    \"employeeFirstName\": \"Dakota\",\r\n    \"employeeLastName\": \"Clark\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"true\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 0,\r\n    \"deptHeadId\": 0\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 15 Jarc 1 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 15,\r\n    \"employeeEmail\": \"jarc.mohnson@revature.net\",\r\n    \"employeeFirstName\": \"Jarc\",\r\n    \"employeeLastName\": \"Mohnson\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 14,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 16 Rich 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 16,\r\n    \"employeeEmail\": \"richard.schaber@revature.net\",\r\n    \"employeeFirstName\": \"Rich\",\r\n    \"employeeLastName\": \"Schaber\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 15,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 17 Michael 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 17,\r\n    \"employeeEmail\": \"michael.chan@revature.net\",\r\n    \"employeeFirstName\": \"Michael\",\r\n    \"employeeLastName\": \"Chan\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 15,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 18 Rob 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 18,\r\n    \"employeeEmail\": \"robert.bierly@revature.net\",\r\n    \"employeeFirstName\": \"Rob\",\r\n    \"employeeLastName\": \"Bierly\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 15,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 19 Marc 1 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 19,\r\n    \"employeeEmail\": \"marc.johnson@revature.net\",\r\n    \"employeeFirstName\": \"Marc\",\r\n    \"employeeLastName\": \"Johnson\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 14,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 20 Parker 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 20,\r\n    \"employeeEmail\": \"parker.loomis@revature.net\",\r\n    \"employeeFirstName\": \"Parker\",\r\n    \"employeeLastName\": \"Loomis\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 19,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 21 Austin 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 21,\r\n    \"employeeEmail\": \"austin.withers@revature.net\",\r\n    \"employeeFirstName\": \"Austin\",\r\n    \"employeeLastName\": \"Withers\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 19,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 22 Rashad 0 0 0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 22,\r\n    \"employeeEmail\": \"rashad.bowman@revature.net\",\r\n    \"employeeFirstName\": \"Rashad\",\r\n    \"employeeLastName\": \"Bowman\",\r\n    \"department\": \"Training\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"false\",\r\n    \"directSuperId\": 19,\r\n    \"deptHeadId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Demo employees",
+			"item": [
+				{
+					"name": "Register 1 Stephanie 1 1 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 1,\r\n    \"employeeEmail\": \"stephanie.tallman@revature.net\",\r\n    \"employeeFirstName\": \"Stephanie\",\r\n    \"employeeLastName\": \"Tallman\",\r\n    \"department\": \"Benefits Coordination\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"true\",\r\n    \"benCo\": \"true\",\r\n    \"directSuperId\": 0,\r\n    \"deptHeadId\": 0\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 2 Chris 1 0 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 2,\r\n    \"employeeEmail\": \"christopher.morrison@revature.net\",\r\n    \"employeeFirstName\": \"Christopher\",\r\n    \"employeeLastName\": \"Morrison\",\r\n    \"department\": \"Benefits Coordination\",\r\n    \"directSuper\": \"true\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"true\",\r\n    \"directSuperId\": 1,\r\n    \"deptHeadId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register 4 Tony 0 0 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 4,\r\n    \"employeeEmail\": \"antoine.atouma@revature.net\",\r\n    \"employeeFirstName\": \"Tony\",\r\n    \"employeeLastName\": \"Atouma\",\r\n    \"department\": \"Benefits Coordination\",\r\n    \"directSuper\": \"false\",\r\n    \"deptHead\": \"false\",\r\n    \"benCo\": \"true\",\r\n    \"directSuperId\": 2,\r\n    \"deptHeadId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chris Script",
+			"item": [
+				{
+					"name": "1",
+					"item": [
+						{
+							"name": "Login as Chris",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employeeId",
+											"value": "2",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit Form 1 as Chris",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "UNICOURSE",
+											"type": "text"
+										},
+										{
+											"key": "grade",
+											"value": "LETTER",
+											"type": "text"
+										},
+										{
+											"key": "formId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "applicationTimeZone",
+											"value": "IET",
+											"type": "text"
+										},
+										{
+											"key": "eventLocation",
+											"value": "Chicago, IL",
+											"type": "text"
+										},
+										{
+											"key": "eventDescription",
+											"value": "Current Best Practices for DBMS course through University of Chicago",
+											"type": "text"
+										},
+										{
+											"key": "eventTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventDateTime",
+											"value": "2021-05-29 10:30",
+											"type": "text"
+										},
+										{
+											"key": "eventCost",
+											"value": "545.59",
+											"type": "text"
+										},
+										{
+											"key": "justification",
+											"value": "Familiarize self with current best practices for database management systems.",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit Form 2 as Chris",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "SEMINAR",
+											"type": "text"
+										},
+										{
+											"key": "grade",
+											"value": "PRESENTATION",
+											"type": "text"
+										},
+										{
+											"key": "formId",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "applicationTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventLocation",
+											"value": "Portland, OR",
+											"type": "text"
+										},
+										{
+											"key": "eventDescription",
+											"value": "Workplace Diversity Seminar",
+											"type": "text"
+										},
+										{
+											"key": "eventTimeZone",
+											"value": "PST",
+											"type": "text"
+										},
+										{
+											"key": "eventDateTime",
+											"value": "2021-05-05 09:15",
+											"type": "text"
+										},
+										{
+											"key": "eventCost",
+											"value": "119.99",
+											"type": "text"
+										},
+										{
+											"key": "justification",
+											"value": "Familiarize self with current best practices for promoting diversity in the workplace.",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit Form 3 as Chris",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "PREPCERT",
+											"type": "text"
+										},
+										{
+											"key": "grade",
+											"value": "PASSFAIL",
+											"type": "text"
+										},
+										{
+											"key": "formId",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "applicationTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventLocation",
+											"value": "Chicago, IL",
+											"type": "text"
+										},
+										{
+											"key": "eventDescription",
+											"value": "Mock Exam for OCA Java 8",
+											"type": "text"
+										},
+										{
+											"key": "eventTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventDateTime",
+											"value": "2021-05-07 00:00",
+											"type": "text"
+										},
+										{
+											"key": "eventCost",
+											"value": "9.99",
+											"type": "text"
+										},
+										{
+											"key": "justification",
+											"value": "Prepare for OCA Java 8 certification",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit Form 4 as Chris",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "CERTIF",
+											"type": "text"
+										},
+										{
+											"key": "grade",
+											"value": "PASSFAIL",
+											"type": "text"
+										},
+										{
+											"key": "formId",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "applicationTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventLocation",
+											"value": "Chicago, IL",
+											"type": "text"
+										},
+										{
+											"key": "eventDescription",
+											"value": "Certification Exam for OCA Java 8",
+											"type": "text"
+										},
+										{
+											"key": "eventTimeZone",
+											"value": "CST",
+											"type": "text"
+										},
+										{
+											"key": "eventDateTime",
+											"value": "2021-05-15 00:00",
+											"type": "text"
+										},
+										{
+											"key": "eventCost",
+											"value": "24.99",
+											"type": "text"
+										},
+										{
+											"key": "justification",
+											"value": "Exam for OCA Java 8 certification",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Form 1 judgement for Chris by Chris",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "approval",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "value",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel Form 3 for Chris",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "2",
+					"item": [
+						{
+							"name": "View All Forms for Chris",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload for Chris Form 2 (.msg)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {
+										"src": "/C:/Users/15748/Documents/Dept Head Approval.msg"
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2/deptHeadApproval.msg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2",
+										"deptHeadApproval.msg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload for Chris Form 2 (.png)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {
+										"src": "/C:/Users/15748/Documents/passingGrade.png"
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2/passingGrade.png",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2",
+										"passingGrade.png"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "3",
+					"item": [
+						{
+							"name": "Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employeeId",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login as Stephanie",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employeeId",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Form 1 judgement for Chris by Stephanie",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "approval",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "value",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Assign award 1 value for Chris",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "value",
+											"value": "420.00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "4",
+					"item": [
+						{
+							"name": "Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employeeId",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login as Tony",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employeeId",
+											"value": "4",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5",
+					"item": [
+						{
+							"name": "Get Upload for Chris Form 2 (.msg)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2/deptHeadApproval.msg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2",
+										"deptHeadApproval.msg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Confirm 2 approval skip for Chris  (.msg)",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "approvalType",
+											"value": "directSuper",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "approvalType",
+											"value": "deptHead",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "approvalType",
+											"value": "both",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2/deptHeadApproval.msg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2",
+										"deptHeadApproval.msg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Form 2 judgement for Chris by Tony",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "approval",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "value",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Upload for Chris Form 2 (.png)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2/passingGrade.png",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2",
+										"passingGrade.png"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Confirm Award 2 Dispersal for Chris",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://localhost:8080/employees/2/forms/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"2",
+										"forms",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
